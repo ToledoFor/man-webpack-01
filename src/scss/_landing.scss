@@ -1,0 +1,23 @@
+.container {
+    max-width: 1046px;
+    margin: 0 auto;
+}
+
+.header-main {
+    background: url('../images/design/cover-hero.jpg') center/cover no-repeat;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+
+    min-height: 100vh;
+    // vh - viewport height
+    // vw - viewport widht
+
+    h1 {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        letter-spacing: 0.2px;
+    }
+}
+

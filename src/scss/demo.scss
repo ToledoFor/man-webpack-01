@@ -1,5 +1,6 @@
 body {
   background: $body-background-color;
+  // background-color: green;
   color: $foreground-color;
   font-family: 'DINP-R', arial, serif;
   font-size: 1.3em;
@@ -16,10 +17,10 @@ header {
   margin: 20px auto;
   position: relative;
 
-  small {
+  small {  // header small {
     font-size: .5em;
 
-    img {
+    img { // header small img {
       display: inline;
       width: 20px;
     }
