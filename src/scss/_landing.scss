@@ -8,11 +8,18 @@ body {
 }
 
 .header-main {
+    .container {
+        min-height: calc(100vh - 50px);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
     background: url('../images/design/cover-hero.jpg') center/cover no-repeat;
     // background-size: cover;
     // background-repeat: no-repeat;
 
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
     // vh - viewport height
     // vw - viewport widht
 
@@ -99,6 +106,37 @@ body {
             font-weight: 500;
             font-size: 20px;
             line-height: 30px;
+            color: $second-text-color;
+        }
+    }
+
+    &__info {
+        display: flex;
+        gap: 30px;
+
+        position: relative;
+        bottom: -20px;
+    }
+
+    &__info-item {
+        background-color: #fff;
+        box-shadow: 0px 13px 19px rgb(0 0 0 / 7%);
+
+        padding: 35px 40px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: $text-color;
+
+            margin: 10px 0;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
             color: $second-text-color;
         }
     }
