@@ -101,17 +101,24 @@ body {
     }
 
     &__cta {
+        padding-right: 50%;
+        width: 100%;
 
         h4 {
             font-weight: 500;
             font-size: 20px;
             line-height: 30px;
             color: $second-text-color;
+            margin: 35px 0;
+
+            // margin-right: 130px;
+            max-width: 390px;
         }
     }
 
     &__info {
         display: flex;
+        // flex-wrap: wrap;
         gap: 30px;
 
         position: relative;
