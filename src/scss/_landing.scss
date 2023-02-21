@@ -223,6 +223,8 @@ body {
     letter-spacing: 0.2px;
     background: #FAFAFA;
 
+    margin: 50px auto;
+
     .row {
         margin-top: 45px;
         margin-bottom: 68px;
@@ -234,6 +236,8 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
+
+        height: auto;
 
         //width: 241px;
         //height: 342px;
