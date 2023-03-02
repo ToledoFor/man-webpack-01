@@ -22,6 +22,24 @@ let var2 = 20;
 let var3;
 var3 = var1 + var2;
 
+$(window).on('load', () => {
+    console.log('ready!')
+    console.log('ready!!')
+});
+
+// $('.header-main__info-item').on('click', () => {
+//     console.log('click');
+// })
+
+$('body').on('click', '.header-main__info-item', () => {
+    console.log('click');
+})
+
+$(document).ready(function() {
+    console.log('ready 1 !')
+    console.log('ready 1 !!')
+});
+
 console.log(var3);
 
 // const variable1 = 10;
