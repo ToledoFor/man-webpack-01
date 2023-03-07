@@ -1,5 +1,9 @@
 /* By Athlon Front-End Team */
 
+@import "fontawesome/scss/fontawesome";
+@import "fontawesome/scss/brands";
+@import "fontawesome/scss/solid";
+
 /* Core variables */
 @import 'base/vars';
 
@@ -15,13 +19,16 @@
 /* Mixins, helpers and functions */
 @import 'base/mixins';
 
+/* */ 
+@import "base/typography";
+
 /* Vendor */
 
 /* Components */
 @import 'base/buttons';
+@import 'components/slider';
 
 /* Sections */
-
 
 /* Browser specific styles */
 @import 'dirty/hacks';
