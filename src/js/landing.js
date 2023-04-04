@@ -106,39 +106,42 @@ const testRes = [
     }
 ];
 
-function getResponse(response) {
-    return response.json();
-}
+// function getResponse(response) {
+//     return response.json();
+// }
 
-function getCurrency(courseId = 5) {
-    const apiUrl = `https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=${courseId}`;
-    //const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+// function getCurrency(courseId = 5) {
+//     const apiUrl = `https://api.privatbank.ua/p24api/pubinfo?exchange&coursid=${courseId}`;
+//     //const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
-    //fetch(proxyUrl + apiUrl)    
-    fetch(apiUrl)     
-        //.then(getResponse(response))
-        //.then(function (response) {
-        //   return response.json();
-        //})
-        .then(response => response.json())
-        .then((data) => {
-            console.log(data);
+//     //fetch(proxyUrl + apiUrl)    
+//     fetch(apiUrl)     
+//         //.then(getResponse(response))
+//         //.then(function (response) {
+//         //   return response.json();
+//         //})
+//         .then(response => response.json())
+//         .then((data) => {
+//             console.log(data);
 
-            const resDiv = document.getElementById('api_response');
+//             const resDiv = document.getElementById('api_response');
 
-            data.forEach(({ccy, base_ccy, buy, sale}) => {
-                resDiv.innerHTML += `Currency: ${ccy}, base ccy: ${base_ccy}, buy rate: ${buy}, sale rate: ${sale} <hr>`;
-            })
-        })
-}
+//             data.forEach(({ccy, base_ccy, buy, sale}) => {
+//                 resDiv.innerHTML += `Currency: ${ccy}, base ccy: ${base_ccy}, buy rate: ${buy}, sale rate: ${sale} <hr>`;
+//             })
+//         })
+// }
 
-// console.log('START');
-// getCurrency();
-// console.log('END');
+// const apiLink = document.getElementById('api_get');
+// apiLink.addEventListener('click', (evt) => {
+//     evt.preventDefault();
 
-const apiLink = document.getElementById('api_get');
-apiLink.addEventListener('click', (evt) => {
-    evt.preventDefault();
+//     getCurrency(4);
+// });
 
-    getCurrency(4);
+// Select2
+$(document).ready(function() { 
+    $('.subscribe_select').select2({
+        minimumResultsForSearch: Infinity
+    });
 });

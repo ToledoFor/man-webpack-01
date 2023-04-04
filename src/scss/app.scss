@@ -27,8 +27,10 @@
 /* Components */
 @import 'base/buttons';
 @import 'components/slider';
+@import 'components/select2';
 
 /* Sections */
+@import 'sections/section4';
 
 /* Browser specific styles */
 @import 'dirty/hacks';

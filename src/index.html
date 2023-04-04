@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack Project</title>    
 
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    >
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
     <header class="header-main">
@@ -144,9 +140,7 @@
 
     <section>
         <a href="#" id="api_get" class="btn btn--primary btn--rounded">Get currency</a><hr>
-        <div id="api_response">
-
-        </div>
+        <div id="api_response"></div>
     </section>
     
     <section class="features_7" id="banner-message">
@@ -201,7 +195,40 @@
         </div>
     </section>
 
+    <section class="section_4">
+        <div class="container">
+          <div class="row item">
+            <img src="images/content/section4/hooli.svg" alt="hooli company" class="item_icon">
+            <img src="images/content/section4/lyft.svg" alt="lyft company" class="item_icon">
+            <img src="images/content/section4/pied_piper.svg" alt="pied_piper company" class="item_icon">
+            <img src="images/content/section4/stripe.svg" alt="stripe company" class="item_icon">
+            <img src="images/content/section4/aws.svg" alt="aws company" class="item_icon">
+            <img src="images/content/section4/reddit.svg" alt="reddit company" class="item_icon">
+          </div>
+          <div class="row subscribe">
+            <h3 class="subscribe_title">Subscribe For Latest Newsletter</h3>
+            <form action="/" class="subscribe_email">
+              <input type="email" name="email" id="email_field" placeholder="Your Email *" class="subscribe_email__place" required>
+              <!-- <input type="submit" name="submit" value="Subscribe" class="subscribe_email__btn btn btn--primary"> -->
+
+              <select name="dropdown" class="subscribe_select">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+              </select>
+
+              <button name="submin_btn" class="subscribe_email__btn btn btn--primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+    </section>
+    
+    
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </body>
 </html>
